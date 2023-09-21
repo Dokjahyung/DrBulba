@@ -6,7 +6,7 @@
     <body>
         <nav class="navbar">
             <!-- LOGO -->
-            <div class="logo">Dr. Bulba</div>
+            <div class="logo"><img src="bulba_logo.png" style="width: 100px;"></img></div>
         
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
@@ -16,26 +16,29 @@
         
                 <li><a href="home.html">Home</a></li>
                 <li><a href="upload.html">Upload</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="response.html">Response</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </div>
             </ul>
-          </nav>
-        
-        <!--https://www.geeksforgeeks.org/how-to-upload-files-using-html-to-website/#-->
-        <div class="upload">
-            <input type="file" 
-            id="file1" 
-            name="upload">
-
-
-            <p>upload PNG file...</p>
-
-            <div>
-              <form action="response.html">
-                <button type="submit">submit photo</button>
-             </form>
+        </nav>
+        <div style="height: 200px;">
+            <p>Dr. Bulba would like to help you on your journey to caring for your plant! 1.Please take a picture of a leaf on your plant</p>
+            <p>1.Please take a picture of a leaf on your plant</p>
+            <p>2. Upload a picture of the leaf to the website by dragging it to the upload square</p>
+            <p>3. Submit photo and learn if your plant has any health issues that you need to attend to
+            </p>
+        </div>
+        <div class="upload-container" id="dropArea">
+            <div class="upload-text">
+                <p>Drag & drop files here</p>
+                <p>or</p>
+                <input type="file" id="fileInput" accept=".pdf, .jpg, .png">
+                <label for="fileInput" class="file-label">Click to select files</label>
             </div>
         </div>
+        <button>Diagnose</button>
+        
+        <div style="position: absolute;width: 100%; height: 100px; background-color: black; bottom: 0px;"></div>
+        <script src="script.js"></script>
     </body>
 </html>
